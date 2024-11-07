@@ -84,6 +84,7 @@ class SignUpScreen extends StatelessWidget {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
+                              backgroundColor: CustomColors.customSwatchColor,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(18)),
                             ),
@@ -92,6 +93,7 @@ class SignUpScreen extends StatelessWidget {
                               'Cadastrar usuário',
                               style: TextStyle(
                                 fontSize: 18,
+                                color: Colors.white,
                               ),
                             ),
                           ),

@@ -104,9 +104,10 @@ class SignInScreen extends StatelessWidget {
                       height: 50,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
+                            backgroundColor: CustomColors.customSwatchColor,
                             shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18),
-                        )),
+                              borderRadius: BorderRadius.circular(18),
+                            )),
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(builder: (c) {
@@ -117,6 +118,7 @@ class SignInScreen extends StatelessWidget {
                           'Entrar',
                           style: TextStyle(
                             fontSize: 18,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -169,9 +171,9 @@ class SignInScreen extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18),
                           ),
-                          side: const BorderSide(
+                          side: BorderSide(
                             width: 2,
-                            color: Colors.green,
+                            color: CustomColors.customSwatchColor,
                           ),
                         ),
                         onPressed: () {
@@ -183,10 +185,11 @@ class SignInScreen extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Text(
+                        child: Text(
                           "Criar conta",
                           style: TextStyle(
                             fontSize: 18,
+                            color: CustomColors.customSwatchColor,
                           ),
                         ),
                       ),
